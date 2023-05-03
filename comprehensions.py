@@ -12,7 +12,7 @@ unique_lengths = set(map(len, strings))
 print(unique_lengths)
 
 # a lookup map of the strings to their locations in the list
-loc_mapping = {val : index for index, val in enumerate(strings)}
+loc_mapping = {val: index for index, val in enumerate(strings)}
 print(loc_mapping)
 
 # nested list comprehensions
