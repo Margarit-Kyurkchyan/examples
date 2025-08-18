@@ -44,3 +44,5 @@ print([x for x in zip(*matrix)])
 print(list(zip(*matrix)))
 
 print([[row[i] for row in matrix] for i in range(4)])
+
+print({x for x in 'abracadabra' if x not in 'abc'})
