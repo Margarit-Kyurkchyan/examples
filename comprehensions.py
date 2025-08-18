@@ -33,3 +33,14 @@ print(combs)
 
 vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print([num for elem in vec for num in elem])
+
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+
+print([x for x in zip(*matrix)])
+print(list(zip(*matrix)))
+
+print([[row[i] for row in matrix] for i in range(4)])
