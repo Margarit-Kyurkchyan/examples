@@ -27,3 +27,9 @@ print(names_of_interest)
 # use a single nested list comprehension
 result = [name for names in all_data for name in names if name.count('a') >= 2]
 print(result)
+
+combs = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+print(combs)
+
+vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print([num for elem in vec for num in elem])
