@@ -1,3 +1,4 @@
+from datetime import date
 s = 'Hello, world.'
 print(str(s))
 print(repr(s))
@@ -9,7 +10,10 @@ print(s)
 # The repr() of a string adds string quotes and backslashes:
 hello = 'hello, world\n'
 hellos = repr(hello)
+print(str('hello, world\n'))
 print(hellos)
-'hello, world\n'
 # The argument to repr() may be any Python object:
 repr((x, y, ('spam', 'eggs')))
+d =date(2025, 8, 25)
+print(str(d))
+print(repr(d))
