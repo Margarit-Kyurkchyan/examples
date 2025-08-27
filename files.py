@@ -14,6 +14,8 @@ with open(path) as f:
     print(lines)
 
 f = open('workfile.txt', 'w', encoding="utf-8")
+f.write('What is Lorem Ipsum? \nWhere does it come from?')
+
 print(f.closed)
 f.close()
 print(f.closed)
