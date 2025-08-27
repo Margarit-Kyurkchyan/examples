@@ -4,6 +4,7 @@ print(f.tell())
 lines = [x.rstrip() for x in f]
 print(f.tell())
 print(lines)
+print(f.read())
 f.close()
 print(f.closed)
 
@@ -12,4 +13,12 @@ with open(path) as f:
     lines = [x.rstrip() for x in f]
     print(lines)
 
+f = open('workfile.txt', 'w', encoding="utf-8")
+print(f.closed)
+f.close()
+print(f.closed)
 
+with open('workfile.txt', encoding="utf-8") as f:
+    read_data = f.read()
+
+print(f.closed)
