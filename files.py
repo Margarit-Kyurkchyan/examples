@@ -21,6 +21,9 @@ f.close()
 print(f.closed)
 
 with open('workfile.txt', encoding="utf-8") as f:
+    for line in f:
+        print(line, end='')
+    print(f.readline())
     read_data = f.read()
 
 print(f.closed)
